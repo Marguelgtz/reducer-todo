@@ -16,7 +16,7 @@ export const toDoReducer = (state, action) => {
       console.log("state :", state);
       return {
         ...state,
-        todos: state.todos.filter(todo => todo.id != action.payload)
+        todos: state.todos.filter(todo => todo.id !== action.payload)
       };
     case "TOGGLE_COMPLETE":
       return {
