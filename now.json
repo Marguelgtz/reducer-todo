@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "reducer-walkthrough",
+  "builds": [
+    {
+      "src": "reducer-walkthrough/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "reducer-walkthrough/$1" }]
+}
